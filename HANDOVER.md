@@ -8,6 +8,10 @@
 
 Live 網站＝Vercel；資料＝Supabase；GitHub HTML＝後備備份（唔使追齊 Pages）。唔 force-push。唔寫 `hx_test`。唔寫職員訓練明細。電腦身份係公司倉 `C:\Cursor\danson236051.github.io\.private\MACHINE.md`（唔 commit）。`C:\Cursor_Work` 兩部機都已收埋，唔好重建。
 
+## 2026-10-19 屋企電腦（Desktop-Yanson）
+
+- Alpha Learn **v5.10**：中文生字閃卡認讀新增學生 **alpha一**。打開閃卡時，如果未有呢個學生就建立，並放入六頁認讀同運用嘅詞語（44 個，兩字或以上）。單字摻、撒、卧 唔加入。原本學生 A 同預設學生保留。第一次打開會切去 alpha一，之後可以再揀返其他學生。Home 整體 **v2.7**。GitHub `danson117/home` → Vercel。雲端 alpha-learn 要等刷新後打開閃卡先上傳。冇改 Karson。刷新已開分頁。唔開 Chrome。
+
 ## 2026-10-17 屋企電腦（Desktop-Yanson）
 
 - Alpha Learn **v5.9**：不供詞填充加乙組十四題、四套。每套用齊呢十四個詞，句子不同；打開時每套各自隨機，同一組四套次序唔同。甲組十六題四套仍在。仍然唔供詞、冇選項；點該題先顯示答案同解釋。天色用「矇矇亮」。Home 整體 **v2.6**。GitHub `danson117/home` → Vercel。冇改 Supabase。冇改 Karson。刷新已開分頁。唔開 Chrome。

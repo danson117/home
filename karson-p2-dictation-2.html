@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P.2 Dictation 2 · 5th November, 2026</title>
+<style>
+  :root {
+    --ink: #1c2836;
+    --muted: #5d6b7a;
+    --line: #d5dee8;
+    --paper: #fffdf9;
+    --desk: #e6e0d6;
+    --blue: #1d4e78;
+    --chip: #fff3df;
+    --chip-edge: #e6c48a;
+    --sign: #f6f3ee;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Segoe UI", Calibri, "Microsoft JhengHei", sans-serif;
+    color: var(--ink);
+    background: var(--desk);
+  }
+  .toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 14px;
+    background: #2a241e;
+    color: #f4efe8;
+    font-size: 14px;
+  }
+  .toolbar button {
+    font: inherit;
+    font-weight: 650;
+    border: 0;
+    border-radius: 8px;
+    padding: 7px 14px;
+    background: #f4efe8;
+    color: #2a241e;
+    cursor: pointer;
+  }
+  .toolbar .ver { opacity: 0.7; font-size: 12px; }
+  .stage {
+    display: flex;
+    justify-content: center;
+    padding: 22px 12px 36px;
+  }
+  .sheet {
+    width: 148mm;
+    height: 210mm;
+    padding: 8mm 8.5mm 7mm;
+    background: var(--paper);
+    box-shadow: 0 10px 28px rgba(50, 36, 18, 0.16);
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8mm;
+    padding-bottom: 2.2mm;
+    border-bottom: 2px solid var(--blue);
+  }
+  h1 {
+    margin: 0;
+    font-size: 16.5pt;
+    font-weight: 750;
+    letter-spacing: -0.02em;
+    color: var(--blue);
+  }
+  .date {
+    margin: 0;
+    font-size: 11.5pt;
+    font-weight: 650;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+  h2 {
+    margin: 0;
+    font-size: 12pt;
+    font-weight: 700;
+  }
+  h2 span { color: var(--blue); margin-right: 1.5mm; }
+  .sounds { margin-top: 3.2mm; }
+  .chips {
+    display: flex;
+    gap: 3mm;
+    margin: 1.8mm 0 0;
+  }
+  .chips b {
+    display: inline-block;
+    min-width: 16mm;
+    text-align: center;
+    padding: 1mm 3.5mm 1.2mm;
+    border: 1.5px solid var(--chip-edge);
+    border-radius: 999px;
+    background: var(--chip);
+    color: #7a4510;
+    font-size: 13pt;
+    font-weight: 750;
+    letter-spacing: 0.04em;
+  }
+  .b-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 3.4mm;
+  }
+  .sign {
+    width: 52mm;
+    padding: 1.6mm 3mm 2mm;
+    border: 1px solid #c5ced8;
+    border-radius: 2mm;
+    background: var(--sign);
+  }
+  .sign span {
+    display: block;
+    font-size: 9pt;
+    font-weight: 650;
+    color: var(--muted);
+  }
+  .sign i {
+    display: block;
+    height: 7mm;
+    margin-top: 1mm;
+    border-bottom: 1px solid #9aa8b6;
+  }
+  ol {
+    list-style: none;
+    margin: 1.6mm 0 0;
+    padding: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    counter-reset: n;
+  }
+  li {
+    display: grid;
+    grid-template-columns: 8.5mm 1fr;
+    column-gap: 1mm;
+    align-items: baseline;
+    font-size: 11.5pt;
+    line-height: 1.25;
+  }
+  li::before {
+    counter-increment: n;
+    content: counter(n) ".";
+    font-weight: 700;
+    color: var(--blue);
+    font-variant-numeric: tabular-nums;
+  }
+  .creative { margin-top: 3mm; }
+  .ref {
+    margin: 1.2mm 0 2mm;
+    font-size: 11pt;
+    font-weight: 650;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .ref em {
+    font-style: normal;
+    font-weight: 750;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  td {
+    border: 1px solid #b7c4d1;
+    padding: 1.7mm 2.4mm;
+    font-size: 11.5pt;
+    background: #fff;
+  }
+  tr:nth-child(odd) td { background: #f4f8fb; }
+  td b {
+    display: inline-block;
+    min-width: 5.5mm;
+    margin-right: 1mm;
+    color: var(--blue);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+  @page { size: 148mm 210mm; margin: 0; }
+  @media print {
+    body { background: white; }
+    .toolbar, .stage { display: contents; }
+    .toolbar { display: none !important; }
+    .stage { padding: 0; }
+    .sheet {
+      box-shadow: none;
+      width: 148mm;
+      height: 210mm;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <button type="button" onclick="window.print()">Print A5</button>
+  <span>Paper size A5. Margins: none. Scale: 100%.</span>
+  <span class="ver">v1.0</span>
+</div>
+<div class="stage">
+<article class="sheet">
+  <header>
+    <h1>P.2 Dictation 2</h1>
+    <p class="date">5th November, 2026</p>
+  </header>
+
+  <section class="sounds">
+    <h2><span>A.</span>Testing of letter sounds</h2>
+    <p class="chips"><b>an</b><b>at</b></p>
+  </section>
+
+  <div class="b-row">
+    <h2>B.</h2>
+    <div class="sign">
+      <span>Parent's signature:</span>
+      <i></i>
+    </div>
+  </div>
+
+  <ol>
+    <li>There is a candy house.</li>
+    <li>The twins are excited.</li>
+    <li>They buy some food.</li>
+    <li>Let's go for a walk in the woods.</li>
+    <li>Are you thirsty?</li>
+    <li>No, I'm not. I'm fine.</li>
+    <li>I'm tired. Let's take a short rest.</li>
+    <li>I'm hungry too. Let's eat some biscuits.</li>
+    <li>Do you want some food?</li>
+    <li>Yes, please. I like some bananas.</li>
+    <li>I don't like lemons because they are sour.</li>
+    <li>The strawberries are sweet.</li>
+  </ol>
+
+  <section class="creative">
+    <h2><span>C.</span>Creative Dictation</h2>
+    <p class="ref">SB2 p.18-19 (Yummy food) <em>At least 3</em></p>
+    <table>
+      <tr>
+        <td><b>1.</b>bread</td>
+        <td><b>2.</b>bacon</td>
+        <td><b>3.</b>congee</td>
+      </tr>
+      <tr>
+        <td><b>4.</b>jam</td>
+        <td><b>5.</b>cheese</td>
+        <td><b>6.</b>juice</td>
+      </tr>
+      <tr>
+        <td><b>7.</b>sausages</td>
+        <td><b>8.</b>soup</td>
+        <td><b>9.</b>salad</td>
+      </tr>
+    </table>
+  </section>
+</article>
+</div>
+</body>
+</html>

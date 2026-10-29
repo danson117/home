@@ -8,6 +8,10 @@
 
 Live 網站＝Vercel；資料＝Supabase；GitHub HTML＝後備備份（唔使追齊 Pages）。唔 force-push。唔寫 `hx_test`。唔寫職員訓練明細。電腦身份係公司倉 `C:\Cursor\danson236051.github.io\.private\MACHINE.md`（唔 commit）。`C:\Cursor_Work` 兩部機都已收埋，唔好重建。
 
+## 2026-10-29 屋企電腦（Desktop-Yanson）
+
+- Karson 小二默書預覽：**P.2 Dictation 2**（5th November, 2026）整成 A5 一頁 `karson-p2-dictation-2.html` **v1.0**。內容跟相片：letter sounds an／at、十二句、家長簽名、Creative Dictation SB2 p.18-19（Yummy food，至少 3）。列印選 A5、無邊界、100%。冇改 Karson Learn／Alpha。冇改 Supabase。GitHub → Vercel。唔開 Chrome。
+
 ## 2026-10-19 屋企電腦（Desktop-Yanson）
 
 - Alpha Learn **v5.10**：中文生字閃卡認讀新增學生 **alpha一**。打開閃卡時，如果未有呢個學生就建立，並放入六頁認讀同運用嘅詞語（44 個，兩字或以上）。單字摻、撒、卧 唔加入。原本學生 A 同預設學生保留。第一次打開會切去 alpha一，之後可以再揀返其他學生。Home 整體 **v2.7**。GitHub `danson117/home` → Vercel。雲端 alpha-learn 要等刷新後打開閃卡先上傳。冇改 Karson。刷新已開分頁。唔開 Chrome。

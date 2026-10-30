@@ -9,8 +9,8 @@ alwaysApply: true
 
 內容按小朋友分開。唔好把生詞表、已學識名單、課文由一邊抄去另一邊。Alpha 係小五；Karson 係小二。同一套工具，內容可以唔同，Karson 嘅詞表同讀默課文可以係空。
 
-雲端文件保持分開：`alpha-learn` 同 `karson-learn`（`HX/hx-shared-sync.js` 嘅 `PUBLIC_DOCS`）。唔好合成一份詞庫。
+雲端文件保持分開：`alpha-learn` 同 `karson-learn`（`family/hx-shared-sync.js` 嘅 `PUBLIC_DOCS`）。唔好合成一份詞庫。
 
 本機一有新改動就上傳。開住嘅頁約 5 秒先問 stamp，冇變就停，有變先下載。較新嘅本機改動唔好被較舊嘅雲端蓋過。成功唔彈窗：狀態先寫「上傳中.....」再寫「上傳完成」。失敗要睇得到。
 
-可見規矩：`HX/hx-rules.html` 紅字。唔寫秘密、密碼、token。
+公司 HX 規矩（紅字）喺 `danson236051` 倉 `HX/hx-rules.html`；家庭頁唔寫入。唔寫秘密、密碼、token。

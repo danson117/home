@@ -3,11 +3,11 @@ description: HX 跨機規矩以 HTML 為準；新加規則要紅字；改完唔�
 alwaysApply: true
 ---
 
-# HX 規矩頁（跨機）
+# HX 規矩頁（跨機 · 公司倉）
 
-可見 SoT：`HX/hx-rules.html`（網上 `https://danson117.github.io/HX/hx-rules.html`）。
+`danson117/home` **冇** `HX/`。可見 SoT：`danson236051/danson236051.github.io` 嘅 `HX/hx-rules.html`（live 跟公司 Vercel）。
 
-- 呢個倉額外新規則：**先寫入該 HTML（紅字）**，再寫本地 `.mdc`。唔可以只寫本地。
+- **公司**新規則：**先寫入該 HTML（紅字）**，再寫公司倉 `.mdc`。家庭倉只改家庭頁同 `family/hx-shared-sync.js`。
 - **同步先問 stamp：** HX 同家庭頁，而家帳同公司新帳，開住一律約 5 秒問 stamp。冇變就停。有變先下載嗰一份。家庭頁左下角同 HX hub 側欄各自顯示自己 Supabase 嘅 Plan／Database／Files／Egress 百分比。Egress 已用同帳單完結日讀唔到就唔估。`hx-shared-sync.js` v1.7、hub v21.30、`hx-rules` v11.3、Alpha v5.4、Karson v2.7。
 - **Hub Supabase 用量：** 側欄底部顯示 Plan、Database（即時容量／限額／百分比）、Files、Egress 限額。Egress 已用 GB 同帳單週期結束時間唔喺 project 入面，頁面唔估數字，撳 Usage page。Pro：Database 8 GB、Files 100 GB、Egress 250 GB。家庭頁左下角同一套百分比，讀而家呢個帳。
 - 另一部機：開該 HTML。紅字＝未對齊／新加。對齊完先可轉普通色。

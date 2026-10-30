@@ -13,7 +13,7 @@ Workspace 係 `danson117/home`（本機 folder `C:\Cursor\danson117.github.io`�
 - GitHub：`danson236051/danson236051.github.io`
 - 網站：`https://danson236051githubio.vercel.app/HX/hx.html`
 
-公司內容包括 HAECO、HX、OCG、Name List、Training One View、Authorization、License、Course completion、Briefing and R&S、Line MX、課程同職員訓練。`HX/` 喺呢個倉只係舊後備，唔再更新。
+公司內容包括 HAECO、HX、OCG、Name List、Training One View、Authorization、License、Course completion、Briefing and R&S、Line MX、課程同職員訓練。**呢個倉唔再有 `HX/` 目錄**（公司 SSOT＝`danson236051` 倉）。家庭雲端同步只用 `family/hx-shared-sync.js`。
 
 家庭頁同 `HANDOVER.md` 仍然留喺呢度。家庭入口係根目錄 `index.html`（名 **Home**）。
 

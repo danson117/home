@@ -8,6 +8,14 @@
 
 Live 網站＝Vercel；資料＝Supabase；GitHub HTML＝後備備份（唔使追齊 Pages）。唔 force-push。唔寫 `hx_test`。唔寫職員訓練明細。電腦身份係公司倉 `C:\Cursor\danson236051.github.io\.private\MACHINE.md`（唔 commit）。`C:\Cursor_Work` 兩部機都已收埋，唔好重建。
 
+**分倉（2026-10-30）：** `danson117/home`＝**家庭 only**（Home、Alpha、Karson、`family/hx-shared-sync.js`、Supabase `kcoszufshvvpxikpzlue`、Life OS 外部連結）。**冇 `HX/` 目錄。** 公司 HAECO HX SSOT＝`danson236051/danson236051.github.io`（Vercel `danson236051githubio`、Supabase `wmswfnrjfkevvhkpbpxd`）。
+
+## 2026-10-30 屋企電腦（Desktop-Yanson · 117 清走全部公司檔）
+
+- **刪除成個 `HX/`**（舊後備、redirect stub、公司 CSV／HTML／Edge 源碼一併移除）。舊 bookmark `danson117-github-io…/HX/` 唔再 serve；公司用 `danson236051githubio.vercel.app/HX/hx.html`。
+- 家庭雲端同步：**`family/hx-shared-sync.js` v1.8**（`kcoszufshvvpxikpzlue`）。根目錄公司用 **LMX 腳本**（`_lmx_*`、`_upload_lmx_sb` 等）已刪，唔入 Git。
+- Home **整體 v2.9**（撤側欄公司 HX 連結）。規矩 `.cursor/rules` 更新：117 倉唔再有 HX。GitHub `danson117/home` → Vercel。刷新已開分頁。唔開 Chrome。
+
 ## 2026-10-29 屋企電腦（Desktop-Yanson）
 
 - Karson 小二默書預覽：**P.2 Dictation 2**（5th November, 2026）整成 A5 一頁 `karson-p2-dictation-2.html` **v1.0**。內容跟相片：letter sounds an／at、十二句、家長簽名、Creative Dictation SB2 p.18-19（Yummy food，至少 3）。列印選 A5、無邊界、100%。冇改 Karson Learn／Alpha。冇改 Supabase。GitHub → Vercel。唔開 Chrome。

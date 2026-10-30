@@ -1,9 +1,6 @@
-/* Shared device sync via locked Edge team-board (hx_private).
- * Docs live in reserved status keys __hx_shared__/<docId> (remark JSON).
- * Does not wipe Training One View status/manual/ual/ct/omt.
- * Read: public GET.
- * HX docs: write needs x-hx-board-password.
- * Family / root docs in PUBLIC_DOCS: write needs no password (URL is enough).
+/* Family pages: shared device sync via Edge team-board (hx_private, kcoszuf…).
+ * Docs: __hx_shared__/<docId> (remark JSON). PUBLIC_DOCS only — no hub password.
+ * Company HAECO HX lives in danson236051/danson236051.github.io (not this repo).
  */
 (function (global) {
   "use strict";

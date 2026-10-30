@@ -5,7 +5,7 @@ alwaysApply: true
 
 # Family on main root
 
-`main` 根目錄 = **家庭**。入口係 `index.html`，側欄一次睇晒家庭題目。`HX/` 係公司舊後備，呢個倉唔再改。
+`main` 根目錄 = **家庭**。入口係 `index.html`，側欄一次睇晒家庭題目。**冇 `HX/`**；公司 HX 全喺 `danson236051` 倉。家庭同步：`family/hx-shared-sync.js`。
 
 公司內容唔喺呢度處理。一涉及 HAECO／HX／職員訓練，停手，提醒去 `C:\Cursor\danson236051.github.io`、GitHub `danson236051/danson236051.github.io`、網站 `https://danson236051githubio.vercel.app/HX/hx.html`。
 
@@ -15,7 +15,7 @@ alwaysApply: true
 - 唔好把呢兩頁再複製去其他 branch
 - After every local HX / repo update that should live on GitHub, **commit and `git push` immediately** (same turn). Do not leave work only on this PC. If several versions were never pushed, **push the latest** (one commit of current state is enough — do not invent one commit per missed version). Do not push secrets (`.env`, passwords, credentials). Do not force-push. Do not skip hooks unless the user asked.
 - 每次本機更新（應上 GitHub 嘅 HX／倉資料）**即刻 commit + push `main`**，唔好只留喺呢部機。之前漏咗就 **push 而家最新**（一次 commit 夠）。
-- **暗號 bye / 收工：** 用戶收工返屋企。即刻 `commit + push` 所有本機應上 GitHub 嘅野，**包 Status / actions**（`HX/team-board-actions.json`）。唔 force；唔 push 秘密。Status 只喺 browser 而未 auto-push 嘅要講清楚。唔開新 Chrome。
+- **暗號 bye / 收工：** 用戶收工返屋企。即刻 `commit + push` 所有本機應上 GitHub 嘅家庭改動。公司 TOV Status／actions 喺 **236051 倉**，唔喺呢度。唔 force；唔 push 秘密。唔開新 Chrome。
 - HTML 右下角 version：細改 +0.1，大改 +1.0；改完**必改**右下角
 - **唔好開新瀏覽器：** 呢個 folder 任何用戶要睇到嘅改動（Home 同其他頁）都唔好開新 tab、唔好開新 Chrome、唔好跑 `Start-Process chrome`。對話講 **version 號**。用戶自己刷新已經開住嘅分頁。
 - After a change the user should see, **do not open a new browser tab or a new Chrome window**. Do not run `Start-Process chrome`. Tell the **page version** in chat. The user refreshes the tab they already have.

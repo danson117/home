@@ -21,9 +21,10 @@ Visible SoT (company repo only): `HX/hx-rules.html` red **GitHub account lock** 
 
 Before `gh`, `git push`, `git remote`, repo create, or Vercel GitHub import: check the authenticated username (`gh api user --jq .login` or equivalent).
 
-- This repo or `danson117/life-os`, and the login is **not** `danson117` → **STOP**.
+- This repo or `danson117/life-os`: the push identity must be **danson117**. If the active `gh` user is someone else, remember that user, switch to the saved **danson117** login, verify `gh api user --jq .login` is `danson117`, push, then switch `gh` back to the user that was active before and verify again. Do not leave `gh` on `danson117` after the push. Do not push this family repo while `gh` is `danson236051`.
+- On this PC the saved family Git login is `git:https://danson117@github.com`. If `gh auth switch --user danson117` cannot run because that user is not in the `gh` account list, use that saved login for the verify-and-push, then clear the temporary token so the active `gh` user is the previous one. Do not print the token. Do not remove the `danson236051` login.
 - The company HX repo, and the login is **not** `danson236051` → **STOP**.
-- If `gh` is logged in as someone else → stop and say so. Do not proceed with that account. Do not switch the saved `gh` login in order to push the other repo.
+- Never switch to, or push as, `0421ALPHA` / `0421alpha`.
 
 ## Forbidden
 

@@ -9,15 +9,22 @@ alwaysApply: true
 
 用戶要求嘅改動**整好**就同一輪做完，唔好停低等批准、唔好再問「要唔要 commit／push／部署」：
 
-1. Stage 相關檔，commit。
-2. `git push origin HEAD` 去 `main`。
-3. 部署跟呢個 push。Vercel 項目 **home** 跟 GitHub `main` 自動出街。唔使再開一次部署批准，亦唔使等用戶講「部署」。
+1. Stage 相關檔，commit。作者用 `git -c user.name=danson117 -c user.email=danson.mj@gmail.com`（唔好 `git config`）。
+2. 記住而家活躍嘅 `gh` 用戶。
+3. 切去 **danson117**，`gh api user --jq .login` 必須係 `danson117`，先 `git push origin HEAD` 去 `main`。
+4. 推完即刻切返推之前嗰個帳（而家係 **danson236051**）。再驗證 `gh api user --jq .login`。唔好推完留喺 danson117。
+5. 部署跟呢個 push。Vercel 項目 **home** 跟 GitHub `main` 自動出街。唔使再開一次部署批准。
 
-整好＝要求做完、頁面版本已加（有改到用戶睇到嘅頁）、`HANDOVER.md` 已寫。之前漏咗未 push 嘅完成品，下一輪直接 push 最新，唔使再批准。
+呢個切去 danson117、推完切返，每次 push 都做。唔好等用戶再講。
+
+`gh` 帳號清單如果未有 danson117，用已經存低嘅家庭 Git 登入 `git:https://danson117@github.com` 做驗證同 push。驗證完清走暫時用嘅 token，唔好寫入檔，唔好印出 token。唔好因此刪走 danson236051 嘅 `gh` 登入。
+
+整好＝要求做完、頁面版本已加（有改到用戶睇到嘅頁）、`HANDOVER.md` 已寫。之前漏咗未 push 嘅完成品，下一輪直接用上面步驟 push 最新。
 
 未整好、做一半、驗證未過：唔好 commit、唔好 push。
 
 ## 仍然要停
 
-- push 前 `gh api user` 必須係 **danson117**。唔係就停，講明而家邊個帳。唔好轉帳、唔好用第二個帳推。
+- `gh` 活躍帳係 **danson236051** 時，唔好推呢個家庭倉。
 - 唔 `--force`。唔 skip hooks。唔 push 秘密、`.env`、token、`*.db`、`_patch_*.py`、`_diff_*.py`。
+- 永遠唔用 `0421alpha` / `0421ALPHA`。

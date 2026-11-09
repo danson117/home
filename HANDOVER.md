@@ -10,6 +10,10 @@ Live 網站＝Vercel；資料＝Supabase；GitHub HTML＝後備備份（唔使�
 
 **分倉（2026-10-30）：** `danson117/home`＝**家庭 only**（Home、Alpha、Karson、`family/hx-shared-sync.js`、Supabase `kcoszufshvvpxikpzlue`、Life OS 外部連結）。**冇 `HX/` 目錄。** 公司 HAECO HX SSOT＝`danson236051/danson236051.github.io`（Vercel `danson236051githubio`、Supabase `wmswfnrjfkevvhkpbpxd`）。
 
+## 2026-11-09 屋企電腦（Desktop-Yanson）
+
+- Alpha Learn **v5.11**：中文生字閃卡認讀新增學生 **alpha二**。第一次打開閃卡會切去呢個學生。詞語表只係今次 18 個（認讀 8 個＋運用 10 個）。如果呢個學生原本有另一批詞，會清走再放入呢 18 個；已經係呢 18 個就保留練習進度。學生 **alpha一** 唔郁。中文讀默課文清走《海上觀日出》，換成三句：學而不思則罔、博學之、吾日三省吾身。只換一次；之後自己改過嘅課文唔再覆蓋。Home 整體 **v3.0**。冇改 Karson。刷新已開分頁。唔開 Chrome。雲端 alpha-learn 要等刷新後打開閃卡先上傳。**未 push：** 呢部機 `gh` 登入係 `danson236051`，家庭倉只可以 `danson117` push。
+
 ## 2026-10-30 屋企電腦（Desktop-Yanson · 117 清走全部公司檔）
 
 - **刪除成個 `HX/`**（舊後備、redirect stub、公司 CSV／HTML／Edge 源碼一併移除）。舊 bookmark `danson117-github-io…/HX/` 唔再 serve；公司用 `danson236051githubio.vercel.app/HX/hx.html`。

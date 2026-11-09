@@ -12,6 +12,10 @@ Live 網站＝Vercel；資料＝Supabase；GitHub HTML＝後備備份（唔使�
 
 ## 2026-11-09 屋企電腦（Desktop-Yanson）
 
+- Alpha Learn **v5.12**、Karson Learn **v2.8**：左邊選單最上面加 **Home**（`index.html`，`target="_top"`）。獨立開頁同嵌喺 Home iframe 都會去頂層家庭 Home，唔開新分頁。Home 側欄冇加多一次 Alpha／Karson。Home 整體 **v3.1**（`data-version` 3.1；cache-bust `Alpha_Learn.html?v=5.12`、`Karson_Learn.html?v=2.8`）。Karson 選單標題同右下角徽章由滯後嘅 2.6 一併對齊到 2.8。冇抄生詞或課文。GitHub `danson117/home` → Vercel。刷新已開分頁。唔開 Chrome。
+
+## 2026-11-09 屋企電腦（Desktop-Yanson）
+
 - 新增規矩 `.cursor/rules/commit-push-deploy.mdc`：呢個倉整好就同一輪 commit、切去 **danson117**、push `main`、Vercel 自動部署，然後切返推之前嘅 `gh` 帳（而家係 **danson236051**）。每次都做，唔使再問批准。家庭倉唔可以喺 `gh` 係 danson236051 時推。`gh` 清單未有 danson117 時，用已存嘅 `git:https://danson117@github.com` 驗證同 push，跟住清走暫時 token。唔用 0421alpha。`github-account-danson117-only.mdc` 已改到允許呢次暫時切換同切返。
 
 ## 2026-11-09 屋企電腦（Desktop-Yanson）

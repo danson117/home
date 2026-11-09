@@ -1,0 +1,23 @@
+---
+description: Finished work in this repo is committed, pushed, and deployed without asking
+alwaysApply: true
+---
+
+# 整好就直接上 GitHub 同部署
+
+只適用於呢個倉 `danson117/home`（本機 `C:\Cursor\danson117.github.io`）。唔好寫成 User Rule。唔好套去公司倉。
+
+用戶要求嘅改動**整好**就同一輪做完，唔好停低等批准、唔好再問「要唔要 commit／push／部署」：
+
+1. Stage 相關檔，commit。
+2. `git push origin HEAD` 去 `main`。
+3. 部署跟呢個 push。Vercel 項目 **home** 跟 GitHub `main` 自動出街。唔使再開一次部署批准，亦唔使等用戶講「部署」。
+
+整好＝要求做完、頁面版本已加（有改到用戶睇到嘅頁）、`HANDOVER.md` 已寫。之前漏咗未 push 嘅完成品，下一輪直接 push 最新，唔使再批准。
+
+未整好、做一半、驗證未過：唔好 commit、唔好 push。
+
+## 仍然要停
+
+- push 前 `gh api user` 必須係 **danson117**。唔係就停，講明而家邊個帳。唔好轉帳、唔好用第二個帳推。
+- 唔 `--force`。唔 skip hooks。唔 push 秘密、`.env`、token、`*.db`、`_patch_*.py`、`_diff_*.py`。

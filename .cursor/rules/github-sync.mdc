@@ -19,7 +19,7 @@ Downloads 入面嘅舊檔（用戶 download GitHub 之後留低）**唔好**自�
 
 1. **改之前：拉最新 GitHub。** Tracked 網站檔（HTML / HX / README / 規則）動手之前，喺 `main` 先 `git fetch origin` 再 `git pull`（呢個倉若已用 rebase 就 `git pull --rebase`）。由 GitHub 最新版開始改。
 2. **改本機鏡像。** 只改呢個 folder 入面嘅檔。
-3. **改完即刻自動 push。** 唔使等用戶再講 push：
+3. **改完即刻自動 push。** 唔使等用戶再講 push，亦唔使再等批准（見 `commit-push-deploy.mdc`）：
    - Stage 相關檔（唔好連 leftover junk）
    - Short commit message
    - **自動** `git push origin HEAD`（或 `main`）
